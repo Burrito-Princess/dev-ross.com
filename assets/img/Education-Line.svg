@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710.39 127.77">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 20px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-9 {
+        fill: #c0272d;
+      }
+    </style>
+  </defs>
+  <g id="Export">
+    <path id="Home" class="cls-2" d="M26.39,1.77L4.7,23.45c-2.93,2.93-2.93,7.69,0,10.63l21.69,21.69"/>
+    <rect id="Havo-HHS" class="cls-9" x="377.39" y="19.77" width="117" height="18"/>
+    <rect id="S-HHS" class="cls-8" x="485.39" y="10.77" width="36" height="36" rx="10" ry="10"/>
+    <rect id="S-Havo" class="cls-8" x="341.39" y="10.77" width="36" height="36" rx="10" ry="10"/>
+    <rect id="Sint-Havo" class="cls-9" x="233.39" y="19.77" width="108" height="18"/>
+    <rect id="S-Sint_Lucas" class="cls-8" x="197.39" y="10.77" width="36" height="36" rx="10" ry="10"/>
+    <rect id="Edu-Sint" class="cls-9" x="89.39" y="19.77" width="108" height="18"/>
+    <rect id="S-Education" class="cls-8" x="53.39" y="10.77" width="36" height="36" rx="10" ry="10"/>
+    <text class="cls-1" transform="translate(658.75 50.16) rotate(45)"><tspan x="0" y="0">G</tspan><tspan class="cls-3" x="12.92" y="0">L</tspan><tspan x="21.64" y="0">U</tspan></text>
+    <text class="cls-1" transform="translate(370.75 49.88) rotate(45)"><tspan x="0" y="0">H</tspan><tspan class="cls-5" x="13.04" y="0">a</tspan><tspan class="cls-6" x="22.52" y="0">v</tspan><tspan x="31.94" y="0">o</tspan></text>
+    <text class="cls-1" transform="translate(520.1 55.52) rotate(45)"><tspan x="0" y="0">HHS</tspan></text>
+    <text class="cls-1" transform="translate(231.25 54.66) rotate(45)"><tspan x="0" y="0">Si</tspan><tspan class="cls-4" x="14.54" y="0">n</tspan><tspan x="25.56" y="0">t </tspan><tspan class="cls-7" x="36.42" y="0">L</tspan><tspan x="45.56" y="0">ucas</tspan></text>
+    <rect id="HHS-GLU" class="cls-9" x="521.39" y="19.77" width="117" height="18"/>
+    <rect id="S-GLU" class="cls-8" x="629.39" y="10.77" width="36" height="36" rx="10" ry="10"/>
+    <text class="cls-1" transform="translate(87.25 54.66) rotate(45)"><tspan class="cls-4" x="0" y="0">E</tspan><tspan x="9.76" y="0">duc</tspan><tspan class="cls-4" x="41.02" y="0">a</tspan><tspan x="50.58" y="0">tion</tspan></text>
+  </g>
+</svg>

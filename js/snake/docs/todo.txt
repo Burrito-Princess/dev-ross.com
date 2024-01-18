@@ -1,0 +1,30 @@
+        Done!
+
+add ghost mode
+    dark/light grey
+    able to go through yourself
+
+make snake solid green
+
+        To Do!
+
+add reverse mode
+    apple: green
+    snake: red
+    reverses the direction of the input 
+
+add flash mode
+    the snake flashes on and off, making it dificult to know when to turn
+
+    Working on:
+
+add obstacles
+    v1
+        light blue
+        when you hit it, you die. it dissapears
+        dissapears after 500 tiks
+    v2
+        light green
+        when you hit it, you lose a point. it becomes v1
+
+

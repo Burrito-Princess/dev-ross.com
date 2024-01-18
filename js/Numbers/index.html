@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numbers!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- <script src="jquery.js"></script> -->
+    <style>
+        button {
+            border-color: white;
+            background-color: white;
+        };
+    </style>
+</head>
+
+<body id="body">
+    <a href="./../../index.html">Home</a>
+    <div id="button"></div>
+    <!-- <div onclick="clickyplus()" onwheel="scrolly(event)" id="button">0</div> -->
+    <input id="input" type="number">
+    <button onclick="inputfield()">Go!</button>
+    <hr>
+    <div>odd or even?</div>
+    <div id="oddity">Even</div>
+    <hr>
+    <div>prime or not prime?</div>
+    <div id="primity">Neither</div>
+    <hr>
+    <span id="no">0 </span><span>is devisable by the following numbers</span>
+    <div id="deviders">'R'</div>
+    <hr>
+    <input placeholder="bits" id="bit_input" type="number">
+    <button onclick="bit_inputfield()">Go!</button>
+    <br>
+    <span>in binary:<div id="binary"></div></span>
+    <hr>
+   
+    <button id="invert" ondblclick="darkmode()">Darkmode!</button>
+    <br>
+    <button onmouseover="reset()">Reset</button>
+    <div id="test"></div>
+
+
+    <script>
+        $("#button").mousedown(function (ev) {
+            if (ev.which == 3) {
+                document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+                }, false);
+                if (clicks > 0) {
+                    clicks--;
+                };
+                press++;
+                clicky();
+            }
+        });
+    </script>
+    
+
+</body>
+</html>
