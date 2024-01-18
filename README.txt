@@ -34,6 +34,7 @@ Current known bugs:
     - ross/about.php
         <a> tag is inside the <button> tag while it should be outside it
         this would fix that you can only click on the text, and not the button its self
+    - Document titles are "document"
 
 This site will be uploaded to: 
     dev-ross.com
