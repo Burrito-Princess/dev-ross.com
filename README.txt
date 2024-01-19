@@ -1,18 +1,18 @@
-This is the GitRepo for my Portofolio Website
+# This is the GitRepo for my Portofolio Website
 
-Here you'll find projects in all sizes, namely: 
+## Here you'll find projects in all sizes, namely: 
     - Maaslanden
     - Snake
     - Numbers.exe
     - NS API
     - Steam API
 
-In the steam API at: 
+## In the steam API at: 
     - ross/steamapi/userapi.php line 5
 you should add your own (or other) steam ID
 
 
-For the API's you should add the following 2 files:
+## For the API's you should add the following 2 files:
     - ns.php (in /js/nsapi)
     - steam.php (in /ross/about/steamapi)
 With the following inside:
@@ -22,20 +22,20 @@ With the following inside:
                                 "
 
 
-In the db.php files you should add your own user and password for the databases. this applies to these files
+## In the db.php files you should add your own user and password for the databases. this applies to these files
     - js/snake/php-database/db.php
     - maaslanden/code/db.php
 
-Future ideas: 
+## Future ideas: 
     - Comment board
     - Reviews (products/food)
 
-Current known bugs:
+## Current known bugs:
     - ross/about.php
         <a> tag is inside the <button> tag while it should be outside it
         this would fix that you can only click on the text, and not the button its self
     - Document titles are "document"
     - Not responsive in the slightest
 
-This site will be uploaded to: 
+## This site will be uploaded to: 
     dev-ross.com
