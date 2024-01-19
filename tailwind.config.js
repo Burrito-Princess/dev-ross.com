@@ -15,6 +15,7 @@ module.exports = {
       hover_king_pink: '#ceA3c1',
     },
     screens:{
+        'xs': '560px',
         'sm': '640px',
         'md': '768px',
         'lg': '1024px',
