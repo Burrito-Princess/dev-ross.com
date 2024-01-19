@@ -16,7 +16,6 @@ you should add your own (or other) steam ID
     - ns.php (in /js/nsapi)
     - steam.php (in /ross/about/steamapi)
 ## With the following inside:
-
 "   <?php
     $apikey = {your api key}
                                 "
@@ -29,13 +28,13 @@ you should add your own (or other) steam ID
 ## Future ideas: 
     - Comment board
     - Reviews (products/food)
+    - Favicons
 
 ## Current known bugs:
     - ross/about.php
         <a> tag is inside the <button> tag while it should be outside it
         this would fix that you can only click on the text, and not the button its self
-    - Document titles are "document"
-    - Not responsive in the slightest
+    - Homepage is responsive, the rest is not
 
 ## This site will be uploaded to: 
     dev-ross.com

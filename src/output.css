@@ -544,10 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .m-5 {
   margin: 1.25rem;
 }
@@ -560,6 +556,21 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mt-10 {
@@ -590,6 +601,10 @@ video {
   height: 6rem;
 }
 
+.h-\[30rem\] {
+  height: 30rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -598,20 +613,16 @@ video {
   height: 100vh;
 }
 
-.h-\[50rem\] {
-  height: 50rem;
+.h-\[10rem\] {
+  height: 10rem;
 }
 
-.h-\[40rem\] {
-  height: 40rem;
+.h-\[15rem\] {
+  height: 15rem;
 }
 
-.h-\[20rem\] {
-  height: 20rem;
-}
-
-.h-\[30rem\] {
-  height: 30rem;
+.h-auto {
+  height: auto;
 }
 
 .w-1\/2 {
@@ -654,16 +665,17 @@ video {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 147 71 / var(--tw-bg-opacity));
 }
 
 .bg-king_blue {
@@ -683,6 +695,16 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-king_white {
@@ -729,5 +751,20 @@ video {
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1330px) {
+  .mb\:flex-row {
+    flex-direction: row;
+  }
+
+  .mb\:justify-between {
+    justify-content: space-between;
   }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About Ross - dev-ross.com</title>
     <link rel="stylesheet" href="./../src/output.css" />
   </head>
 
@@ -19,7 +19,7 @@
           />
         </div>
         <div id="below-img" class="h-[30rem] w-auto bg-king_pink flex flex-col items-center">
-          <button class="bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
+          <button class="bg-black h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             <a href="./../index.html">Home</a>
           </button>
           <button class="bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">

@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./ross/about.php"],
+  content: [
+    "./index.html", 
+    "./ross/about.php"
+  ],
   theme: {
     colors: {
       king_pink: '#e8b7d5',
@@ -10,9 +13,15 @@ module.exports = {
       king_blue: '#6E96CE',
       hover_king_blue: '#4E76AE',
       hover_king_pink: '#ceA3c1',
-
+    },
+    screens:{
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+        'mb': "1330px",
     }
-    
   },
   extend:{
     width:{
