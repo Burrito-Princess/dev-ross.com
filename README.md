@@ -15,7 +15,7 @@ you should add your own (or other) steam ID
 ## For the API's you should add the following 2 files:
     - ns.php (in /js/nsapi)
     - steam.php (in /ross/about/steamapi)
-With the following inside:
+## With the following inside:
 
 "   <?php
     $apikey = {your api key}
