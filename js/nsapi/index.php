@@ -10,7 +10,7 @@
     <?php include "nsapi.php" ?>
   </head>
   <body >
-    <a href="./../../index.html">Home</a>
+    <a href="./../../index.html" class="h-10 w-screen"><button class="bg-king_blue p-3 h-full w-full flex justify-center  text-king_white">Home</button></a>
     
     <h1 id="where" class="flex justify-center text-xl">Utrecht</h1>
     <h3 id="code" class="flex justify-center">UT</h3>
@@ -21,19 +21,19 @@
     <br /><br />
     <div id="shortcut-button" class="flex justify-center">
       <div id="flex-container">
-        <button class="stations border-4 p-3 bg-king_blue hidden md:inline" id="" onclick="shortcut('RTD', 'Rotterdam Centraal')">
-          Rotterdam Centraal
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('RTD', 'Rotterdam Centraal')">
+          Rotterdam Centraal 
         </button>
-        <button class="stations border-4 p-3 bg-king_blue hidden md:inline" id="" onclick="shortcut('ASD', 'Amsterdam Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('ASD', 'Amsterdam Centraal')">
           Amsterdam Centraal
         </button>
-        <button class="station border-4 p-3 bg-king_blue hidden md:inline" id="" onclick="shortcut('GVC', 'The Hague Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('GVC', 'The Hague Centraal')">
           The Hague Centraal
         </button>
-        <button class="stations border-4 p-3 bg-king_blue hidden md:inline" id="" onclick="shortcut('UT', 'Utrecht Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('UT', 'Utrecht Centraal')">
           Utrecht Centraal
         </button>
-        <button class="stations border-4 p-3 bg-king_blue hidden md:inline" id="" onclick="shortcut('AH', 'Arnhem Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('AH', 'Arnhem Centraal')">
           Arnhem Centraal
         </button>
       </div>

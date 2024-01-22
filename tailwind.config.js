@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./index.html", 
-    "./ross/about.php"
+    "./ross/about.php",
+    "./js/index.php"
   ],
   theme: {
     colors: {
