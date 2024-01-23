@@ -35,6 +35,7 @@ you should add your own (or other) steam ID
         <a> tag is inside the <button> tag while it should be outside it
         this would fix that you can only click on the text, and not the button its self
     - Homepage, NS api and about page are responsive. The rest is not
+    - Snake canvas disapears on small screen, this is on purpose. this is so you can check the scores while on mobile, but cant play because you need a desktop
 
 ## This site will be uploaded to: 
     dev-ross.com
