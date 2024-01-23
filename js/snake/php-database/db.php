@@ -1,6 +1,6 @@
 <?php
     $username = "root";
-    $password = "";
+    $password = "root";
     $dbname = "arcade_classic";
     $servername = "localhost";
 ?>

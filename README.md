@@ -26,7 +26,7 @@ you should add your own (or other) steam ID
     - maaslanden/code/db.php
 
 ## Future ideas: 
-    - Comment board
+    - Comment board (in progress)
     - Reviews (products/food)
     - Favicons
 

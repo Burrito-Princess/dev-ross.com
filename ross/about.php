@@ -15,7 +15,7 @@
       <div id="insg_img">
         <img class="h-screen" src="../assets/img/insignia-king-ross.svg" alt="insignia king ross" />
       </div>
-      <div id="below-img" class="h-[60rem] w-auto bg-king_pink flex flex-col items-center">
+      <div id="below-img" style="height: 45rem" class="w-auto bg-king_pink flex flex-col items-center">
         <a href="./../index.html">
           <button class="bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             Home
@@ -40,13 +40,15 @@
     </div>
 
     <div class="lg:h-40 h-24 lg:w-1/2 w-2/3  place-content-center mx-auto mt-10">
-      <div class="lg:h-40 h-24 lg:w-full w-full bg-king_pink grid place-content-center mx-auto mt-10 rounded-3xl">
+      <a href="./../index.html">
+      <div class="lg:h-40 h-24 lg:w-full w-full bg-king_pink grid place-content-center mx-auto mt-10 rounded-3xl  hover:bg-hover_king_pink">
         <div>
           <p class="white-border font-lato lg:text-7xl md:text-small_main text-tiny_main">
             About Ross
           </p>
         </div>
       </div>
+    </a>
       <div id="content" class="mt-10 font-lato">
         <div class="flex justify-center">
           <div class="w-full bg-king_blue text-king_white p-6 mx-3 rounded-xl">

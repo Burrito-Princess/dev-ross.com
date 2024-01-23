@@ -21,19 +21,19 @@
     <br /><br />
     <div id="shortcut-button" class="flex justify-center">
       <div id="flex-container">
-        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('RTD', 'Rotterdam Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg text-king_white" id="" onclick="shortcut('RTD', 'Rotterdam Centraal')">
           Rotterdam Centraal 
         </button>
-        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('ASD', 'Amsterdam Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg text-king_white" id="" onclick="shortcut('ASD', 'Amsterdam Centraal')">
           Amsterdam Centraal
         </button>
-        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('GVC', 'The Hague Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg text-king_white" id="" onclick="shortcut('GVC', 'The Hague Centraal')">
           The Hague Centraal
         </button>
-        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('UT', 'Utrecht Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg text-king_white" id="" onclick="shortcut('UT', 'Utrecht Centraal')">
           Utrecht Centraal
         </button>
-        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg" id="" onclick="shortcut('AH', 'Arnhem Centraal')">
+        <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg text-king_white" id="" onclick="shortcut('AH', 'Arnhem Centraal')">
           Arnhem Centraal
         </button>
       </div>
