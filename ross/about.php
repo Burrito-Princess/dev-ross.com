@@ -61,7 +61,7 @@
         </div>
       </div>
       <!-- start 1st row -->
-      <div id="content" class="mt-10 font-lato">
+      <div id="content" class="md:mt-10 mt-0 font-lato">
         <div class="md:flex inline justify-center">
           <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
             <p class="text-4xl flex justify-center">Gaming</p>
@@ -121,7 +121,7 @@
           </div>
         </div>
         <!-- start 2nd row -->
-        <div id="content" class="mt-10 font-lato">
+        <div id="content" class="md:mt-10 mt-0 font-lato">
           <div class="md:flex inline justify-center">
             <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
               <p class="text-4xl flex justify-center">Languages</p>

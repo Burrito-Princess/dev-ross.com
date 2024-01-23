@@ -34,7 +34,7 @@ you should add your own (or other) steam ID
     - ross/about.php
         <a> tag is inside the <button> tag while it should be outside it
         this would fix that you can only click on the text, and not the button its self
-    - Homepage and NS api are responsive, the rest is not
+    - Homepage, NS api and about page are responsive. The rest is not
 
 ## This site will be uploaded to: 
     dev-ross.com

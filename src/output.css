@@ -572,6 +572,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .inline {
   display: inline;
 }
@@ -714,6 +718,10 @@ video {
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:inline {
