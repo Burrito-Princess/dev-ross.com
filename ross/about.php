@@ -43,18 +43,18 @@
       <a href="./../index.html">
       <div class="lg:h-40 h-24 lg:w-full w-full bg-king_pink grid place-content-center mx-auto mt-10 rounded-3xl  hover:bg-hover_king_pink">
         <div>
-          <p class="white-border font-lato lg:text-7xl md:text-small_main text-tiny_main">
+          <p class="white-border font-lato lg:text-7xl md:text-small_main text-4xl">
             About Ross
           </p>
         </div>
       </div>
     </a>
       <div id="content" class="mt-10 font-lato">
-        <div class="flex justify-center">
-          <div class="w-full bg-king_blue text-king_white p-6 mx-3 rounded-xl">
+        <div class="md:flex inline justify-center">
+          <div class="w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
             Hi! My name is Ross, I currently study web-development at Grafisch Lyceum Utrecht. I like PC and Switch
-            gaming, Mostly resource management
-            or ofcourse Mario Kart. All my life I've lived in Molenhoek, a small village to the south of Nijmegen. 2
+            gaming, Mostly resource management or ofcourse Mario Kart. All my life I've lived in Molenhoek, 
+            a small village to the south of Nijmegen. 2
             years ago I went to live in Delft to study Applied Physics,
             after half a year I quit and searched for a new study which is how I ended up at GLU.
           </div>
@@ -62,8 +62,8 @@
       </div>
       <!-- start 1st row -->
       <div id="content" class="mt-10 font-lato">
-        <div class="flex justify-center">
-          <div class="w-1/2 bg-king_blue text-king_white p-6 mx-3 rounded-xl">
+        <div class="md:flex inline justify-center">
+          <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
             <p class="text-4xl flex justify-center">Gaming</p>
             <br>
             <div>
@@ -107,7 +107,7 @@
                   ?>
             </div>
           </div>
-          <div class="w-1/2 bg-king_blue text-king_white p-6 mx-3 rounded-xl">
+          <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
             <p class="text-4xl flex justify-center">3D Printing</p>
             <div>
               For my 3D printer I either download cool prints from <a href="https://www.thingiverse.com">Thingiverse</a>
@@ -122,8 +122,8 @@
         </div>
         <!-- start 2nd row -->
         <div id="content" class="mt-10 font-lato">
-          <div class="flex justify-center">
-            <div class="w-1/2 bg-king_blue text-king_white p-6 mx-3 rounded-xl">
+          <div class="md:flex inline justify-center">
+            <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
               <p class="text-4xl flex justify-center">Languages</p>
               <br>
               <div>
@@ -134,7 +134,7 @@
                 in English
               </div>
             </div>
-            <div class="w-1/2 bg-king_blue text-king_white p-6 mx-3 rounded-xl">
+            <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
               <p class="text-4xl flex justify-center">Traveling</p>
               <div>
                 I like to travel, I've mostly been around europe, but I intend to travel more. This will be encouraged

@@ -28,7 +28,7 @@
           Amsterdam Centraal
         </button>
         <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg text-king_white" id="" onclick="shortcut('GVC', 'The Hague Centraal')">
-          The Hague Centraal
+          Den Haag Centraal
         </button>
         <button class="stations p-2 bg-king_blue hidden md:inline md:rounded-xl rounded-lg text-king_white" id="" onclick="shortcut('UT', 'Utrecht Centraal')">
           Utrecht Centraal

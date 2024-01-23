@@ -563,8 +563,17 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -688,6 +697,36 @@ video {
 .hover\:bg-hover_king_pink:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(206 163 193 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:inline {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .md\:inline {
+    display: inline;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1024px) {
