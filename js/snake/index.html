@@ -19,16 +19,19 @@
 
 <body>
   <canvas class="hidden lg:inline"id="canvas" width="700px" height="700px"></canvas>
-  <div class="hidden lg:inline" id="white-space"></div>
-  <div>
+  <div class="hidden lg:inline " id="white-space"></div>
+  <div class="flex flex-col lg:flex-row">
     <div id="vertical-center">
       <a href="./../../index.html">Home</a>
-    <div>User:<br> <input placeholder="dip" id="name" value="DIP" maxlength="3"></input></div>
+    <div class="hidden lg:inline">User:<br> <input placeholder="dip" id="name" value="DIP" maxlength="3"></input></div>
     <div id="score">Score: 0</div>
     <!-- <div id="dirc">Direction: up</div> -->
     <div id="leader-board"></div>
+    
   </div>
+  <p class="inline lg:hidden">To play snake,<br> access on desktop</p>
 </div>
+
 </body>
 <script src="script_1.js"></script>
 

@@ -3,7 +3,8 @@ module.exports = {
   content: [
     "./index.html", 
     "./ross/about.php",
-    "./js/index.php"
+    "./js/index.php",
+    "./js/snake/index.html"
   ],
   theme: {
     colors: {

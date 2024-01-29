@@ -17,9 +17,8 @@ canvas{
 }
 
 body{
-    display: flex;
-    justify-content: center;
-
+    /* display: flex;
+    justify-content: center; */
 }
 
 #white-space{

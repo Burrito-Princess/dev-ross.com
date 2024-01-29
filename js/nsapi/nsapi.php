@@ -139,7 +139,7 @@ async function ns() {
       // str_mesg = JSON.stringify(message.messages[0]);
       // str_mesg = str_mesg.split('"');
 
-      document.getElementById(i + "_mesg").innerHTML = "Uninterupeted";
+      document.getElementById(i + "_mesg").innerHTML = "Uninterrupted";
     }
 
     //cancelled
