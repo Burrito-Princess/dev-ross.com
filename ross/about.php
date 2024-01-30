@@ -7,6 +7,7 @@
   <title>About Ross - dev-ross.com</title>
   <link rel="stylesheet" href="./../src/input.css" />
   <link rel="stylesheet" href="./../output.css" />
+  <link rel="icon" type="image/x-icon" href="./../assets/img/favicon_3.ico">
 </head>
 
 <body>
@@ -108,7 +109,7 @@
             </div>
           </div>
           <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
-            <p class="text-4xl flex justify-center">3D Printing</p>
+            <p class="text-4xl flex justify-center">3D Printing</p><br>
             <div>
               For my 3D printer I either download cool prints from <a href="https://www.thingiverse.com">Thingiverse</a>
               or I make them myself.
@@ -135,31 +136,17 @@
               </div>
             </div>
             <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
-              <p class="text-4xl flex justify-center">Traveling</p>
+              <p class="text-4xl flex justify-center">Back-end</p><br>
               <div>
-                I like to travel, I've mostly been around europe, but I intend to travel more. This will be encouraged
-                by the lowering of train tickets.<br>
-                As of the start of 2024 I've been to:<br><br>
-                <div class="flex" style="justify-content:space-around">
-                  <div>
-                    <li>Austria</li>
-                    <li>Belgium</li>
-                    <li>France</li>
-                    <li>Germany</li>
-                  </div>
-                  <div>
-                    <li>Indonesia</li>
-                    <li>Luxembourg</li>
-                    <li>Spain</li>
-                    <li>Tunisia</li>
-                  </div>
-
-                  <div>
-                  </div>
-                </div>
+                As you might have noticed, Front-end and design are not my strong suits. I prefer to work on the back-end.
+                I love to work with databases and API's to make the website more dynamic. Getting information and using it in exiting ways is what I love to do.
+                Front-end is something I wouldn't like to specialize in, but it would be a good skill to have. Thus am I open to learning more about it.
+                
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
 
           <!-- start 3rd row -->

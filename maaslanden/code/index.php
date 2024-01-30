@@ -12,6 +12,13 @@
     ?>
 </head>
 <body>
+<a href='./../../index.html'>Home</a><br>
+    <div>
+        <h1>Maaslanden</h1>
+        <p>Hi! This is my project Maaslanden. Maaslanden is a Board game inspired by Carcassonne and Settlers of Catan.</p>
+        <p>Gather resources by building land and cities. Connect to trade and expand your growing empire.</p>
+        <p>Use your phone to tap the cities and get information via the NFC tag that leads to this site.</p>
+</div>
     <head>
 
         <?php 
@@ -26,8 +33,7 @@
           $stmt = $conn->prepare($sql);
           $stmt->execute();
           $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-          
-          echo "<a href='./../../index.html'>Home</a><br>";
+        
           echo "<table id='main-table'>";
           echo "this is the table for game nr. " . $_GET['game'];
             echo "<tr>";
@@ -50,6 +56,18 @@
             };
             echo "</table>";
         ?>
+        <div>
+            <h3>Name</h3>
+            <p>This name is picked randomly from the database, then removed to avoid getting the same name twice.</p>
+            <h3>Type</h3>
+            <p>The Type is also chosen semi-randomly, E.g. village has a higher chance of being picked, and capital can be picked once and is then removed from the database</p>
+            <h3>Population</h3> 
+            <p>The population is chosen semi-randomly as well, a village will have a random value from a lower range as a city.</p>
+            <h3>Industry</h3>
+            <p>The industry is chosen randomly from a list, and can appear more often.</p>
+            <h3>City ID</h3>
+            <p>The city ID is a unique number that is used to identify the city in the game selected, in this case game: <?php echo $_GET['game']?></p>
+        </div>
     </head>
 </body>
 </html>
