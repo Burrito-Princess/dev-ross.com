@@ -7,6 +7,9 @@ module.exports = {
     "./js/snake/index.html"
   ],
   theme: {
+    fontFamily:{
+
+    },
     colors: {
       king_pink: '#e8b7d5',
       king_white: '#f2f2f2',

@@ -37,6 +37,13 @@
             Numbers.exe
           </button>
         </a>
+        <div class="bg-king_blue w-4/5 h-64 mt-20 rounded-xl flex flex-col">
+          <div class="mx-5 text-king_white">
+            <div class="text-2xl mt-3">Contact</div>
+            <br>
+            <p>E-mail: dev-ross@hotmail.com</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -141,7 +148,6 @@
                 As you might have noticed, Front-end and design are not my strong suits. I prefer to work on the back-end.
                 I love to work with databases and API's to make the website more dynamic. Getting information and using it in exiting ways is what I love to do.
                 Front-end is something I wouldn't like to specialize in, but it would be a good skill to have. Thus am I open to learning more about it.
-                
               </div>
             </div>
           </div>
