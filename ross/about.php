@@ -57,7 +57,16 @@
           <div class="mx-5 text-king_white">
             <div class="text-2xl mt-3">Contact</div>
             <br>
-            <p>E-mail: dev-ross@hotmail.com</p>
+            <div class="flex justify-center h-full w-full">
+              <a class="h-1/2 w-1/2 bg-king_pink m-3 flex justify-center items-center text-black" href="mailto:dev-ross@hotmail.com">
+              <div >
+                mail
+              </div>
+            </a>
+              <div class="h-1/2 w-1/2 bg-king_pink m-3">
+                <a href="mailto:dev-ross@hotmail.com">mail</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
