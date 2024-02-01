@@ -69,6 +69,11 @@
             Numbers.exe
           </button>
         </a>
+        <a target="_blank" href="https://github.com/Burrito-Princess">
+          <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
+            Github
+          </button>
+        </a>
         <div class="bg-king_blue shadow-xl w-4/5 h-64 mt-20 rounded-2xl flex flex-col">
           <div class="mx-5 text-king_white">
             <div class="text-2xl mt-3">Contact</div>
@@ -160,13 +165,13 @@
           <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
             <p class="text-4xl flex justify-center">3D Printing</p><br>
             <div>
-              For my 3D printer I either download cool prints from <a href="https://www.thingiverse.com">Thingiverse</a>
+              For my 3D printer I either download cool prints from <a href="https://www.thingiverse.com"><span class="underline" >Thingiverse</span></a>
               or I make them myself.
               I use both Blender and Cinema4D. I'm not fluent in either of these, but I know my way around them.
               <br><br>
               When I design my own it's not something overly complicated, just functional. For example a stand for a
               server monitor, or a fan.
-              I have also tried to make my own board game with it, in the process to make the rules now.
+              I have also tried to make <a href="./../maaslanden/code/"><span class="underline">my own board game</span></a> with it, in the process to make the rules and the back-end now.
             </div>
           </div>
         </div>

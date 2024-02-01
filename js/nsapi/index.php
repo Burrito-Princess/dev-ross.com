@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./../../src/input.css">
     <?php include "nsapi.php" ?>
   </head>
-  <body >
+  <body class="">
     <a href="./../../index.html" class="h-10 w-screen"><button class="bg-king_blue p-3 h-full w-full flex justify-center  text-king_white">Home</button></a>
     
     <h1 id="where" class="flex justify-center text-xl">Utrecht</h1>
