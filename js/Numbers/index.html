@@ -27,7 +27,7 @@
     <a href="./../../index.html">Home</a>
     <div id="button"></div>
     <!-- <div onclick="clickyplus()" onwheel="scrolly(event)" id="button">0</div> -->
-    <input id="input" type="number">
+    <input id="input" type="number" placeholder="positive intergers only">
     <button onclick="inputfield()">Go!</button>
     <div>Current number: <span id="current-number"></span></div>
     <hr>
@@ -50,6 +50,7 @@
     <p>Take any positive interger number, if it is even, divide it by 2, if it is odd, multiply it by 3 and add 1.</p>
     <p>Repeat this process until you get to 1.</p>
     <p>All numbers checked so far end in the number 1, but it's not proven ...</p>
+    
 
     <div>nr of tries to get to 1: <span id="tries"></span></div>
     <div>Process: <span id="process"></span></div>
@@ -120,7 +121,7 @@
         function clicky() {
             // console.clear();
             document.getElementById("current-number").innerHTML = clicks;
-            document.getElementById("deviders").innerHTML = "";
+            document.getElementById("deviders").innerHTML = " ";
             document.getElementById("button").innerHTML = clicks;
             if (clicks % 2 == 1) {
                 document.getElementById("oddity").innerHTML = "odd";
@@ -290,9 +291,10 @@
         let table;
 
         function generatetable() {
-            for (let i = 0; i < tableobj.length; i++) {
+            for (let i = 1; i < tableobj.length - 1; i++) {
                 table += "<br>" + clicks + " / " + "<span style='color:red;'>" + tableobj[i].divider + "</span> = " + tableobj[i].result;
             }
+            console.log(table);
             document.getElementById("deviders").innerHTML = table;
             table = "";
             tableobj = [];
