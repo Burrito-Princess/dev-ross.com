@@ -29,6 +29,7 @@
     <!-- <div onclick="clickyplus()" onwheel="scrolly(event)" id="button">0</div> -->
     <input id="input" type="number">
     <button onclick="inputfield()">Go!</button>
+    <div>Current number: <span id="current-number"></span></div>
     <hr>
     <div>odd or even?</div>
     <div id="oddity">Even</div>
@@ -118,6 +119,7 @@
 
         function clicky() {
             // console.clear();
+            document.getElementById("current-number").innerHTML = clicks;
             document.getElementById("deviders").innerHTML = "";
             document.getElementById("button").innerHTML = clicks;
             if (clicks % 2 == 1) {
@@ -145,7 +147,7 @@
                 // document.getElementById("deviders").innerHTML = darray;
                 document.getElementById("no").innerHTML = clicks + " ";
             } else if (count == 1) {
-                document.getElementById("primity").innerHTML = "prime";
+                document.getElementById("primity").innerHTML = "not prime";
                 // document.getElementById("deviders").innerHTML = darray;
                 document.getElementById("no").innerHTML = clicks + " ";
             } else if (clicks == 0) {
