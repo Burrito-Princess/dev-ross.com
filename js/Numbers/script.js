@@ -1,6 +1,7 @@
 let clicks = 0;
 let press = 0;
 let tf = 1;
+let type = "linear";
 
 
 function clickyplus() {
@@ -10,7 +11,7 @@ function clickyplus() {
 };
 
 function clicky() {
-    console.clear();
+    // console.clear();
     document.getElementById("deviders").innerHTML = "";
     document.getElementById("button").innerHTML = clicks;
     if (clicks % 2 == 1) {
@@ -29,7 +30,7 @@ function clicky() {
         if (clicks % steps == 0) {
             count++;
             devisions = clicks / steps;
-            console.log(devisions)
+            // console.log(devisions)
             darray.push(devisions);
         };
     }
@@ -66,20 +67,20 @@ function scrolly(event) {
     var y = event.deltaY;
     if (y < 0) {
         clicks++
-        console.log(clicks);
+        // console.log(clicks);
         document.getElementById("button").innerHTML = clicks;
     } else if (y > 0) {
         if (clicks > 0) {
             clicks--;
         };
-        console.log(clicks);
+        // console.log(clicks);
         document.getElementById("button").innerHTML = clicks;
     };
     clicky();
 };
 
 function darkmode() {
-    console.log("Invert!")
+    // console.log("Invert!")
     if (document.getElementById("body").style.backgroundColor == "black") {
         document.getElementById("body").style.backgroundColor = "white";
         document.getElementById("body").style.color = "black";
@@ -115,7 +116,7 @@ function incementSeconds() {
 }
 
 function resett() {
-    console.log("T is reset");
+    // console.log("T is reset");
     t = 0;
     press = 0;
 }
@@ -152,7 +153,7 @@ function tobinary_plus(){
 
 function inputfield(){
     clicks = document.getElementById("input").value;
-    clicky();
+    start();
 }
 
 function bit_inputfield(){
@@ -170,10 +171,10 @@ function makeobj(){
             divider: divarray[i],
             result: clicks/divarray[i]
         }
-        console.log(tableobj);
+        // console.log(tableobj);
     }
     let test = tableobj[0].divider;
-    console.log(test);
+    // console.log(test);
     generatetable();
 }
 
@@ -191,11 +192,53 @@ function generatetable(){
 
 
 /////////////////3x+1/////////////////////
+let n;
+let array = [];
+let arrayn = [];
+let x;
+
+function start(){
+    x0 = document.getElementById("input").value;
+    x = x0;
+    console.log(x);
+    n = 0;
+    array.push(x);
+    arrayn.push(n);
+    formula();
+};
 
 function formula(){
-    let x = clicks;
+
+    // console.log(x);
+    
     if (x%2 == 0){
-        
+        x = x / 2;
+        // console.log(x);
+        array.push(x);
+        if (x == 1){
+            n = n + 1;
+            arrayn.push(n);
+            n = n - 1;
+            document.getElementById("tries").innerHTML = n + 1;
+            console.log(x0);
+            document.getElementById("process").innerHTML = array;
+            document.getElementById("test_2").innerHTML = arrayn;
+            done();
+        }else{
+            n = n + 1;
+            arrayn.push(n);
+            formula();
+        };
+    }else{ 
+        x = 3 * x + 1;
+        n = n + 1;
+        // console.log(x);
+        array.push(x);
+        arrayn.push(n);
+        formula();
     }
+};
+function done(){
+    clicky();
 }
-   
+
