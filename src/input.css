@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.white-border {
+/* .white-border {
     color: #3a2415;
     text-shadow:
      -2px -2px 0 #f2f2f2,  
       2px -2px 0 #f2f2f2,
       -2px 2px 0 #f2f2f2,
        2px 2px 0 #f2f2f2;
-  }
+  } */

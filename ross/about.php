@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Ross - dev-ross.com</title>
   <link rel="stylesheet" href="./../src/input.css" />
-  <link rel="stylesheet" href="./../output.css" />
+  
+  <link rel="stylesheet" href="./../src/output.css" />
   <link rel="apple-touch-icon" sizes="57x57" href="./../assets/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./../assets/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="./../assets/favicon/apple-icon-72x72.png">
@@ -24,48 +25,64 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<script>
+  function copyText(){
+    console.log("yes")
+    navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
+  if (result.state == "granted" || result.state == "prompt") {
+    alert("Write access granted!");
+  }
+});
+  navigator.clipboard.writeText
+                ("my discord");
+                
+  }
+          
+</script>
 </head>
 
-<body>
-  <div class="h-full flex justify-start">
+<body class="h-max">
+  <div class="h-full flex justify-start bg-king_brown">
     <div class="hidden lg:inline ">
       <div id="insg_img">
         <img class="h-screen" src="../assets/img/insignia-king-ross.svg" alt="insignia king ross" />
       </div>
-      <div id="below-img" style="height: 45rem" class="w-auto bg-king_pink flex flex-col items-center">
+      <div>
+      <div id="below-img" style="height: 60rem" class="overflow-hidden w-auto grow bg-king_pink flex flex-col items-center">
         <a href="./../index.html">
-          <button class="bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
+          <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             Home
           </button>
         </a>
         <a href="./../js/nsapi/">
-          <button class="bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
+          <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             NS API
           </button>
         </a>
         <a href="./../maaslanden/code/">
-          <button class="bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
+          <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             Maaslanden
           </button>
         </a>
         <a href="./../js/Numbers/">
-          <button class="bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
+          <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             Numbers.exe
           </button>
         </a>
-        <div class="bg-king_blue w-4/5 h-64 mt-20 rounded-xl flex flex-col">
+        <div class="bg-king_blue shadow-xl w-4/5 h-64 mt-20 rounded-2xl flex flex-col">
           <div class="mx-5 text-king_white">
             <div class="text-2xl mt-3">Contact</div>
             <br>
-            <div class="flex justify-center h-full w-full">
-              <a class="h-1/2 w-1/2 bg-king_pink m-3 flex justify-center items-center text-black" href="mailto:dev-ross@hotmail.com">
-              <div >
-                mail
+            <div class="flex flex-col justify-center h-full w-full">
+              <div class="h-full w-full flex justify-center">
+                <a class="shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">mail</a>
+                <button onclick='copyText()' class="shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Discord</button>
               </div>
-            </a>
-              <div class="h-1/2 w-1/2 bg-king_pink m-3">
-                <a href="mailto:dev-ross@hotmail.com">mail</a>
+              <div class="h-full w-full flex justify-center">
               </div>
+            
+              </div>
+              
             </div>
           </div>
         </div>
@@ -76,7 +93,7 @@
       <a href="./../index.html">
       <div class="lg:h-40 h-24 lg:w-full w-full bg-king_pink grid place-content-center mx-auto mt-10 rounded-3xl  hover:bg-hover_king_pink">
         <div>
-          <p class="white-border font-lato lg:text-7xl md:text-small_main text-4xl">
+          <p class="font-lato lg:text-7xl md:text-small_main text-4xl">
             About Ross
           </p>
         </div>
@@ -85,11 +102,11 @@
       <div id="content" class="mt-10 font-lato">
         <div class="md:flex inline justify-center">
           <div class="w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
-            Hi! My name is Ross, I currently study web-development at Grafisch Lyceum Utrecht. I like PC and Switch
-            gaming, Mostly resource management or ofcourse Mario Kart. All my life I've lived in Molenhoek, 
-            a small village to the south of Nijmegen. 2
-            years ago I went to live in Delft to study Applied Physics,
-            after half a year I quit and searched for a new study which is how I ended up at GLU.
+            Hi! My name is Ross, I currently study web development at Grafisch Lyceum Utrecht. I like PC and Switch
+            gaming, especially resource management or of course Mario Kart. All my life I've lived in Molenhoek, 
+            a small village to the south of Nijmegen. In September 2022 I started at GLU and since then I have discovered
+            my love for programming.
+            <!-- somewhere put interests such as physics and maths -->
           </div>
         </div>
       </div>
@@ -99,7 +116,7 @@
           <div class="md:w-1/2 w-full bg-king_blue text-king_white p-6 md:mx-3 mx-0 md:my-0 my-3 rounded-xl">
             <p class="text-4xl flex justify-center">Gaming</p>
             <br>
-            <div>
+            <div class="flex flex-col justify-center">
               <?php 
                     include("./steamapi/userapi.php");
                     include("./steamapi/gamesapi.php");
@@ -119,7 +136,7 @@
                           $time_unit = " h";
                         }
 
-                        echo "Random game I own: " . $random_game . " (" . $playtime . $time_unit . ")<br>";
+                        echo "Random game: " . $random_game . " (" . $playtime . $time_unit . ")<br>";
                         
                     } else {
                         // Output an error message
@@ -171,7 +188,7 @@
               <p class="text-4xl flex justify-center">Back-end</p><br>
               <div>
                 As you might have noticed, Front-end and design are not my strong suits. I prefer to work on the back-end.
-                I love to work with databases and API's to make the website more dynamic. Getting information and using it in exiting ways is what I love to do.
+                I love to work with databases and API's to make the website more dynamic. Getting information and using it in exciting ways is what I love to do.
                 Front-end is something I wouldn't like to specialize in, but it would be a good skill to have. Thus am I open to learning more about it.
               </div>
             </div>
@@ -185,6 +202,14 @@
           <!-- end -->
 
         </div>
+        <script>
+          function copyText(){
+            console.log("yes");
+            navigator.clipboard.writeText("burrross_1995");
+                        
+          }
+                  
+        </script>
 </body>
 
 </html>

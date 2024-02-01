@@ -604,12 +604,12 @@ video {
   display: none;
 }
 
-.h-1\/2 {
-  height: 50%;
-}
-
 .h-10 {
   height: 2.5rem;
+}
+
+.h-2\/3 {
+  height: 66.666667%;
 }
 
 .h-24 {
@@ -626,6 +626,11 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .h-screen {
@@ -656,6 +661,10 @@ video {
   width: 100%;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -680,6 +689,14 @@ video {
   justify-content: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -691,6 +708,11 @@ video {
 .bg-king_blue {
   --tw-bg-opacity: 1;
   background-color: rgb(110 150 206 / var(--tw-bg-opacity));
+}
+
+.bg-king_brown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(58 36 21 / var(--tw-bg-opacity));
 }
 
 .bg-king_pink {
@@ -712,9 +734,14 @@ video {
   line-height: 2.5rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-black {
   --tw-text-opacity: 1;
-  color: rgb(2 2 2 / var(--tw-text-opacity));
+  color: rgb(58 36 21 / var(--tw-text-opacity));
 }
 
 .text-king_white {
@@ -722,14 +749,26 @@ video {
   color: rgb(242 242 242 / var(--tw-text-opacity));
 }
 
-.white-border {
-  color: #3a2415;
-  text-shadow:
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* .white-border {
+    color: #3a2415;
+    text-shadow:
      -2px -2px 0 #f2f2f2,  
       2px -2px 0 #f2f2f2,
       -2px 2px 0 #f2f2f2,
        2px 2px 0 #f2f2f2;
-}
+  } */
 
 .hover\:bg-hover_king_blue:hover {
   --tw-bg-opacity: 1;

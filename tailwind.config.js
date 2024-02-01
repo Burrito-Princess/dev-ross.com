@@ -11,14 +11,14 @@ module.exports = {
 
     },
     colors: {
+      king_brown: '#3a2415',
       king_pink: '#e8b7d5',
       king_white: '#f2f2f2',
-      black: '#020202',
+      black: '#3a2415',
       dark_pink: '#685369',
       king_blue: '#6E96CE',
       hover_king_blue: '#4E76AE',
       hover_king_pink: '#ceA3c1',
-      king_brown: '#3a2415',
     },
     screens:{
         'xs': '560px',
