@@ -80,8 +80,8 @@
             <br>
             <div class="flex flex-col justify-center h-full w-full">
               <div class="h-full w-full flex justify-center">
-                <a class="shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">mail</a>
-                <button onclick='copyText()' class="shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Discord</button>
+                <a class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">mail</a>
+                <button onclick='copyText()' class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Discord</button>
               </div>
               <div class="h-full w-full flex justify-center">
               </div>
