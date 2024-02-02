@@ -25,7 +25,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<script>
+<!-- <script>
   function copyText(){
     console.log("yes")
     navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
@@ -38,7 +38,7 @@
                 
   }
           
-</script>
+</script> -->
 </head>
 
 <body class="h-max">
@@ -80,13 +80,8 @@
             <br>
             <div class="flex flex-col justify-center h-full w-full">
               <div class="h-full w-full flex justify-center">
-<<<<<<< HEAD
                 <a class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">mail</a>
-                <button onclick='copyText()' class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Discord</button>
-=======
-                <a class="shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Mail</a>
-                <button id="disc_button" onclick='copyText()' class="shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl">Discord</button>
->>>>>>> b1fad0c6d2c02eaf4c51f5bd2be56d1ea549881f
+                <button id="disc_button" onclick='copyText()' class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Discord</button>
               </div>
               <div class="h-full w-full flex justify-center">
               </div>

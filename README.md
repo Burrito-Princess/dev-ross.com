@@ -40,3 +40,17 @@ you should add your own (or other) steam ID
 
 ## This site will be uploaded to: 
     dev-ross.com
+
+
+## Maaslanden roadmap:
+    1. Owner awareness
+        Know which player owns which ctiy
+    2. multiple industries
+        Allow cities to have multiple industries, which increases the range of the city
+        by a cerain amount of tiles
+    3. Surroundings awareness
+        Know what tiles are surrounding what cities.
+        should be updatable trough the page of that city.
+    4. Upgrades
+    L. Front-end (least important)
+    L. maaslanden.dev-ross.com (indev choice) / maaslanden.net (final product)
