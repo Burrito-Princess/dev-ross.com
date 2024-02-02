@@ -59,12 +59,12 @@
             NS API
           </button>
         </a>
-        <a href="./../maaslanden/code/">
+        <a href="./../maaslanden/code/index.php?game=1">
           <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             Maaslanden
           </button>
         </a>
-        <a href="./../js/Numbers/">
+        <a href="./../js/numbers/">
           <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             Numbers.exe
           </button>
@@ -80,8 +80,13 @@
             <br>
             <div class="flex flex-col justify-center h-full w-full">
               <div class="h-full w-full flex justify-center">
+<<<<<<< HEAD
                 <a class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">mail</a>
                 <button onclick='copyText()' class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Discord</button>
+=======
+                <a class="shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Mail</a>
+                <button id="disc_button" onclick='copyText()' class="shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl">Discord</button>
+>>>>>>> b1fad0c6d2c02eaf4c51f5bd2be56d1ea549881f
               </div>
               <div class="h-full w-full flex justify-center">
               </div>
@@ -111,7 +116,7 @@
             gaming, especially resource management or of course Mario Kart. All my life I've lived in Molenhoek, 
             a small village to the south of Nijmegen. In September 2022 I started at GLU and since then I have discovered
             my love for programming.
-            <!-- somewhere put interests such as physics and maths -->
+         <!-- somewhere put interests such as physics and maths -->
           </div>
         </div>
       </div>
@@ -207,14 +212,7 @@
           <!-- end -->
 
         </div>
-        <script>
-          function copyText(){
-            console.log("yes");
-            navigator.clipboard.writeText("burrross_1995");
-                        
-          }
-                  
-        </script>
+        <script src="./about.js"></script>
 </body>
 
 </html>
