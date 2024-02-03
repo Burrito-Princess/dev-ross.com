@@ -45,6 +45,8 @@ you should add your own (or other) steam ID
 ## Maaslanden roadmap:
     1. Owner awareness
         Know which player owns which ctiy
+        You will have a card, which you can scan. Then you will be able to select from initialized cities to claim. 
+        
     2. multiple industries
         Allow cities to have multiple industries, which increases the range of the city
         by a cerain amount of tiles

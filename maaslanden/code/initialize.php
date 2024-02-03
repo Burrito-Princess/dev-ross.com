@@ -61,8 +61,7 @@ try {
       $name = $result[$namerandom]["variable"];
       echo $name . "<br>";
       
-      $stmt = $conn->prepare("DELETE FROM game_variables WHERE variable = '$name' AND game_id = " . intval($_GET['game']));
-      $stmt->execute();
+      
       $sql = "SELECT * FROM game_variables WHERE game_id =" . intval($_GET['game']) . " AND kind = 'industry'";
       $stmt = $conn->prepare($sql);
       $stmt->execute();
@@ -90,12 +89,29 @@ try {
       $city_id = intval($_GET['city']);
       echo $city_id;
       
-    
-    
-    $sql = "INSERT INTO game_" . intval($_GET['game']) . "(type, name, industry, initial_pop, current_pop, city_id) VALUES ('$type', '$name', '$industry', '$initial_pop', '$current_pop', '$city_id')";
+    echo "<form action='' method='POST'>";
+    echo "<select name='player'>";
+    echo "<option value='1'>Player 1</option>";
+    echo "<option value='2'>Player 2</option>";
+    echo "<option value='3'>Player 3</option>";
+    echo "<option value='4'>Player 4</option>";
+    echo "</select>";
+    echo "<input type='submit' value='Submit'>";
+
+    if (isset($_POST['player'])){
+      $player = $_POST['player'];
+      $player_id = $player;
+      $sql = "INSERT INTO game_" . intval($_GET['game']) . "(type, name, industry, initial_pop, current_pop, city_id, player_id) VALUES ('$type', '$name', '$industry', '$initial_pop', '$current_pop', '$city_id', '$player_id')";
   
     $stmt = $conn->prepare($sql);
     $stmt->execute();
+    $stmt = $conn->prepare("DELETE FROM game_variables WHERE variable = '$name' AND game_id = " . intval($_GET['game']));
+      $stmt->execute();
+    }
+
+    
+    
+    
     }
     
   } else {

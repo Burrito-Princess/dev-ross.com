@@ -42,6 +42,7 @@
                 echo "<th>population</th>";
                 echo "<th>industry</th>";
                 echo "<th>city id</th>";
+                echo "<th>player</th>";
                 
             echo "</tr>";
             foreach($results as $result) {
@@ -51,7 +52,7 @@
                     echo "<td>" . $result["current_pop"] . "</td>";
                     echo "<td>" . $result["industry"] . "</td>";
                     echo "<td>" . $result["city_id"] . "</td>";
-                    
+                    echo "<td>" . $result["player_id"] . "</td>";
                 echo "</tr>";
             };
             echo "</table>";
