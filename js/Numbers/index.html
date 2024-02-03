@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numbers.exe - dev-ross.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./../../src/output.css">
     <!-- <script src="script.js"></script> -->
     <script src="jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -17,14 +18,24 @@
         }
 
         #chartPlace {
-            height: 300px;
-            width: 600px;
+            height: auto;
+            width: 90vw;
+        }
+        #process {
+            overflow: auto;
+            /* text-wrap: wrap; */
+            word-break: break-word;
+            height: 100px;
+            width: 100%;
+        }
+        #body{
+            margin: 5%;
         }
     </style>
 </head>
 
 <body id="body">
-    <a href="./../../index.html">Home</a>
+    <a href="./../../index.html" class="underline text-2xl">Home</a>
     <div id="button"></div>
     <!-- <div onclick="clickyplus()" onwheel="scrolly(event)" id="button">0</div> -->
     <input id="input" type="number" placeholder="positive intergers only">
@@ -40,12 +51,9 @@
     <span id="no">0 </span><span>is devisable by the following numbers</span>
     <div id="deviders">'R'</div>
     <hr>
-    <input placeholder="bits" id="bit_input" type="number">
-    <button onclick="bit_inputfield()">Go!</button>
-    <br>
     <span>in binary:<div id="binary"></div></span>
     <hr>
-    <h2>The Collatz Conjecture</h2>
+    <a href="https://en.wikipedia.org/wiki/Collatz_conjecture" target="_blank" class="underline text-2xl">The Collatz Conjecture</a>
     <p>Also known as the 3x + 1 problem is as following:</p>
     <p>Take any positive interger number, if it is even, divide it by 2, if it is odd, multiply it by 3 and add 1.</p>
     <p>Repeat this process until you get to 1.</p>
@@ -53,7 +61,7 @@
     
 
     <div>nr of tries to get to 1: <span id="tries"></span></div>
-    <div>Process: <span id="process"></span></div>
+    Process: <div id="process" class=""></div>
     <div id="chartPlace">
     <canvas id="myChart"></canvas>
 </div>
@@ -202,12 +210,12 @@
                 document.getElementById("invert").innerHTML = "Darkmode!";
             } else {
                 document.getElementById("body").style.backgroundColor = "black";
-                document.getElementById("body").style.color = "grey";
+                document.getElementById("body").style.color = "white";
                 const collection = document.getElementsByTagName("button");
                 for (let i = 0; i < collection.length; i++) {
                     collection[i].style.backgroundColor = "black"
-                    collection[i].style.color = "grey";
-                    collection[i].style.borderColor = "grey";
+                    collection[i].style.color = "white";
+                    collection[i].style.borderColor = "white";
                 };
                 document.getElementById("invert").innerHTML = "Lightmode!";
             };
@@ -246,13 +254,19 @@
         function tobinary_plus() {
             let bi_1 = clicks;
             let bi_string = [];
+            function log (x , y){
+                return Math.log(x) / Math.log(y);
+            }
+            bit = Math.round(log(bi_1, 2)) + 1;
 
             for (let i = bit - 1; i > -1; i--) {
                 if (bi_1 >= 2 ** i) {
                     bi_1 = bi_1 - 2 ** i;
                     bi_string.push(1);
+                    console.log("binary: " + bi_1);
                 } else {
                     bi_string.push(0);
+                    console.log("binary: " + bi_1);
                 };
             };
             document.getElementById("binary").innerHTML = bi_string;
@@ -332,7 +346,12 @@
                     n = n - 1;
                     document.getElementById("tries").innerHTML = n + 1;
                     console.log(x0);
-                    document.getElementById("process").innerHTML = array;
+                    
+                    array.shift();
+                    console.log("this is the array " + array);
+                    array.splice(0, 0, parseInt(x0));
+                    array_text = JSON.stringify(array, null, '\t');
+                    document.getElementById("process").innerHTML = array_text;
                     done();
                 } else {
                     n = n + 1;

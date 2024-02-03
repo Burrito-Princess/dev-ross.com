@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maaslanden - dev-ross.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./../../src/output.css">
     <?php 
     // include "game.php";
     // include "initialize.php";
@@ -12,12 +13,13 @@
     ?>
 </head>
 <body>
-<a href='./../../index.html'>Home</a><br>
+<a href='./../../index.html' class="text-2xl underline">Home</a><br>
     <div>
-        <h1>Maaslanden</h1>
+        <h1 class="text-4xl">Maaslanden</h1>
         <p>Hi! This is my project Maaslanden. Maaslanden is a Board game inspired by Carcassonne and Settlers of Catan.</p>
         <p>Gather resources by building land and cities. Connect to trade and expand your growing empire.</p>
         <p>Use your phone to tap the cities and get information via the NFC tag that leads to this site.</p>
+        <br>
 </div>
     <head>
 
@@ -41,7 +43,7 @@
                 echo "<th>type</th>";
                 echo "<th>population</th>";
                 echo "<th>industry</th>";
-                echo "<th>city id</th>";
+            
                 echo "<th>player</th>";
                 
             echo "</tr>";
@@ -51,22 +53,27 @@
                     echo "<td>" . $result["type"] . "</td>";
                     echo "<td>" . $result["current_pop"] . "</td>";
                     echo "<td>" . $result["industry"] . "</td>";
-                    echo "<td>" . $result["city_id"] . "</td>";
+        
                     echo "<td>" . $result["player_id"] . "</td>";
                 echo "</tr>";
             };
             echo "</table>";
         ?>
         <div>
-            <h3>Name</h3>
+            <br>
+            <h3 class="text-2xl">Name</h3>
             <p>This name is picked randomly from the database, then removed to avoid getting the same name twice.</p>
-            <h3>Type</h3>
+            <br>
+            <h3 class="text-2xl">Type</h3>
             <p>The Type is also chosen semi-randomly, E.g. village has a higher chance of being picked, and capital can be picked once and is then removed from the database</p>
-            <h3>Population</h3> 
+            <br>
+            <h3 class="text-2xl">Population</h3> 
             <p>The population is chosen semi-randomly as well, a village will have a random value from a lower range as a city.</p>
-            <h3>Industry</h3>
+            <br>
+            <h3 class="text-2xl">Industry</h3>
             <p>The industry is chosen randomly from a list, and can appear more often.</p>
-            <h3>City ID</h3>
+            <br>
+            <h3 class="text-2xl">City ID</h3>
             <p>The city ID is a unique number that is used to identify the city in the game selected, in this case game: <?php echo $_GET['game']?></p>
         </div>
     </head>

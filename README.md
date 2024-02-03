@@ -25,16 +25,21 @@ you should add your own (or other) steam ID
     - js/snake/php-database/db.php
     - maaslanden/code/db.php
 
+## In the maaslanden map:
+    - Make a file called "pass.php"
+## With the following inside:
+"   <?php
+    $pass = {your password}
+                                "
+## This is so only you can make keys! 
+
+
 ## Future ideas: 
     - Comment board
     - Reviews (products/food)
     - Favicons (ongoing)
 
 ## Current known missing stuff:
-    - ross/about.php
-        <a> tag is inside the <button> tag while it should be outside it
-        this would fix that you can only click on the text, and not the button its self
-    - Homepage, NS api and about page are responsive. The rest is not
     - Snake canvas disapears on small screen, this is on purpose. this is so you can check the scores while on mobile, but cant play because you need a desktop
     - More contact info needed
 
@@ -43,16 +48,24 @@ you should add your own (or other) steam ID
 
 
 ## Maaslanden roadmap:
-    1. Owner awareness
-        Know which player owns which ctiy
-        You will have a card, which you can scan. Then you will be able to select from initialized cities to claim. 
+[check] 1. Owner awareness 
+            Know which player owns which ctiy.
+            When initializing a city, chose which player claims it.
+            using the reassign card you can reassign a city if you've made a mistake
+            - In a final game it would be cool to have some sort of box with a lock on it where you put this card, so one can only use it with permission of the others 
         
-    2. multiple industries
-        Allow cities to have multiple industries, which increases the range of the city
-        by a cerain amount of tiles
-    3. Surroundings awareness
-        Know what tiles are surrounding what cities.
-        should be updatable trough the page of that city.
-    4. Upgrades
-    L. Front-end (least important)
-    L. maaslanden.dev-ross.com (indev choice) / maaslanden.net (final product)
+        2. Move to maaslanden.dev-ross.com
+            this is so i can update maaslanden easily without having to update the entire portofolio
+        
+        3. multiple industries
+            Allow cities to have multiple industries, which increases the range of the city
+            by a cerain amount of tiles
+
+        4. Surroundings awareness
+            Know what tiles are surrounding what cities.
+            should be updatable trough the page of that city.
+
+        5. Upgrades
+
+        L. Front-end (least important)
+        L. maaslanden.dev-ross.com (indev choice) / maaslanden.net (final product)

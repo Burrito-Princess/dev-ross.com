@@ -41,7 +41,7 @@
 </script> -->
 </head>
 
-<body class="h-max">
+<body class="h-max bg-king_brown">
   <div class="h-full flex justify-start bg-king_brown">
     <div class="hidden lg:inline ">
       <div id="insg_img">
@@ -52,6 +52,11 @@
         <a href="./../index.html">
           <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
             Home
+          </button>
+        </a>
+        <a target="_blank" href="./../js/snake/">
+          <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
+            Snake
           </button>
         </a>
         <a href="./../js/nsapi/">

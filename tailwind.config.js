@@ -4,7 +4,10 @@ module.exports = {
     "./index.html", 
     "./ross/about.php",
     "./js/index.php",
-    "./js/snake/index.html"
+    "./js/snake/index.html",
+    "./js/snake/index.php",
+    "./js/numbers/index.html",
+    "./maaslanden/index.php",
   ],
   theme: {
     fontFamily:{
