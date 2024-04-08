@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NS - dev-ross.com</title>
-    <link rel="stylesheet" href="./../../output.css">
-    <link rel="stylesheet" href="./../../src/input.css">
+    <link rel="stylesheet" href="./../../dist/output.css">
     <?php include "nsapi.php" ?>
   </head>
   <body class="">

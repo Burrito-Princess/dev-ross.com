@@ -673,10 +673,6 @@ video {
   flex-direction: column;
 }
 
-.flex-col-reverse {
-  flex-direction: column-reverse;
-}
-
 .place-content-center {
   place-content: center;
 }
