@@ -42,9 +42,9 @@
 </head>
 
 <body class="h-max bg-king_brown">
-  <div class="h-full flex justify-start bg-king_brown">
-    <div class="hidden lg:inline ">
-      <div id="insg_img">
+  <div class="h-full flex lg:flex-row flex-col justify-start bg-king_brown ">
+    <div class="">
+      <div id="insg_img" class="hidden lg:inline">
         <img class="h-screen" src="./assets/img/insignia-king-ross.svg" alt="insignia king ross" />
       </div>
       <div>
@@ -193,11 +193,7 @@
           </div>
         </div>
       </div>
-
-
-      <!-- start 3rd row -->
-
-      <!-- end -->
+    </div>
 
     </div>
     <script src="./about.js"></script>
