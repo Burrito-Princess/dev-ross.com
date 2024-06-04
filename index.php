@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Ross - dev-ross.com</title>
-  <link rel="stylesheet" href="./../src/input.css" />
+  <link rel="stylesheet" href="./src/input.css" />
 
-  <link rel="stylesheet" href="./../src/output.css" />
+  <link rel="stylesheet" href="./src/output.css" />
   <link rel="apple-touch-icon" sizes="57x57" href="./../assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./../assets/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./../assets/favicon/apple-icon-72x72.png">
@@ -42,34 +42,29 @@
 </head>
 
 <body class="h-max bg-king_brown">
-  <div class="h-full flex justify-start bg-king_brown">
-    <div class="hidden lg:inline ">
-      <div id="insg_img">
-        <img class="h-screen" src="../assets/img/insignia-king-ross.svg" alt="insignia king ross" />
+  <div class="h-full flex lg:flex-row flex-col justify-start bg-king_brown ">
+    <div class="">
+      <div id="insg_img" class="hidden lg:inline">
+        <img class="h-screen" src="./assets/img/insignia-king-ross.svg" alt="insignia king ross" />
       </div>
       <div>
         <div id="below-img" style="height: 60rem" class="overflow-hidden w-auto grow bg-king_pink flex flex-col items-center">
-          <a href="./../index.html">
-            <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
-              Home
-            </button>
-          </a>
-          <a target="_blank" href="./../js/snake/">
+          <a target="_blank" href="./js/snake/">
             <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
               Snake
             </button>
           </a>
-          <a href="./../js/nsapi/">
+          <a target="_blank" href="./js/nsapi/">
             <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
               NS API
             </button>
           </a>
-          <a href="./../maaslanden/code/index.php?game=1">
+          <a target="_blank" href="http://maaslanden.dev-ross.com">
             <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
               Maaslanden
             </button>
           </a>
-          <a href="./../js/numbers/">
+          <a target="_blank" href="./js/numbers/">
             <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
               Numbers.exe
             </button>
@@ -98,7 +93,7 @@
     </div>
 
     <div class="lg:h-40 h-24 lg:w-1/2 w-2/3  place-content-center mx-auto mt-10">
-      <a href="./../index.html">
+      <a href="">
         <div class="lg:h-40 h-24 lg:w-full w-full bg-king_pink grid place-content-center mx-auto mt-10 rounded-3xl  hover:bg-hover_king_pink">
           <div>
             <p class="font-lato lg:text-7xl md:text-small_main text-4xl">
@@ -159,9 +154,9 @@
               <br>
               <div class="flex flex-col justify-center">
                 <?php
-                include("./steamapi/userapi.php");
-                include("./steamapi/gamesapi.php");
-                include("./steamapi/statsgame.php");
+                include("./ross/steamapi/userapi.php");
+                include("./ross/steamapi/gamesapi.php");
+                include("./ross/steamapi/statsgame.php");
                 // include("./steamapi/statsgame.php");
 
                 // Check if the request was successful
@@ -198,11 +193,7 @@
           </div>
         </div>
       </div>
-
-
-      <!-- start 3rd row -->
-
-      <!-- end -->
+    </div>
 
     </div>
     <script src="./about.js"></script>

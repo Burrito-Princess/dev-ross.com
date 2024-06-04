@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NS - dev-ross.com</title>
-    <link rel="stylesheet" href="./../../output.css">
-    <link rel="stylesheet" href="./../../src/input.css">
+    <link rel="stylesheet" href="./../../dist/output.css">
     <?php include "nsapi.php" ?>
   </head>
   <body class="">
-    <a href="./../../index.html" class="h-10 w-screen"><button class="bg-king_blue p-3 h-full w-full flex justify-center  text-king_white">Home</button></a>
+    <a href="./../../index.php" class="h-10 w-screen"><button class="bg-king_blue p-3 h-full w-full flex justify-center  text-king_white">Home</button></a>
     
     <h1 id="where" class="flex justify-center text-xl">Utrecht</h1>
     <h3 id="code" class="flex justify-center">UT</h3>
