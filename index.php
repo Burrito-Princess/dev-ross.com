@@ -25,20 +25,17 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <!-- <script>
+  <script>
   function copyText(){
-    console.log("yes")
-    navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
-  if (result.state == "granted" || result.state == "prompt") {
-    alert("Write access granted!");
-  }
-});
-  navigator.clipboard.writeText
-                ("my discord");
-                
-  }
+    navigator.clipboard.writeText("Your text to copy")
+    .then(() => {
+         alert("Username copied")
+    })
+    .catch(err => {
+        console.error("Failed to copy text: ", err);
+    });}
           
-</script> -->
+</script>
 </head>
 
 <body class="h-max bg-king_brown">
@@ -77,7 +74,7 @@
               <div class="flex flex-col justify-center h-full w-full">
                 <div class="h-full w-full flex justify-center">
                   <a class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Mail</a>
-                  <button id="disc_button" onclick='copyText()' class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Discord</button>
+                  <button id="disc_button" onclick='copyText()' class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl">Discord</button>
                 </div>
                 <div class="h-full w-full flex justify-center">
                   <a class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="https://github.com/Burrito-Princess" target="_blank">Github</a>
