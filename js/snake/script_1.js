@@ -13,7 +13,7 @@ let mode_array = [
   "blue",
   "rainbow",
   "aaaaaa",
-  "normal",
+  "speed",
   "normal",
   "normal",
   "normal",
@@ -35,6 +35,7 @@ let g_size = 28;
 let tik = 100;
 let mode = "normal";
 let clicked = false;
+let interval;
 
 let p_x_pos = [];
 let p_y_pos = [];
@@ -45,8 +46,8 @@ let p_y;
 let o_x;
 let o_y;
 
-let point = document.getElementById("point");
-let gameover_sound = document.getElementById("gameover");
+// let point = document.getElementById("point");
+// let gameover_sound = document.getElementById("gameover");
 
 let random_x;
 let random_y;
@@ -74,7 +75,7 @@ function drawObstacle() {
 }
 
 function drawApple(player) {
-  if (mode == "rainbow") {
+  if (mode == "rainbow" || mode == "speed") {
     a_x = squares.sample();
     a_y = squares.sample();
     context.beginPath();
@@ -84,6 +85,7 @@ function drawApple(player) {
     context.fill();
   } else {
     mode = mode_array.sample();
+    startTimer();
     a_x = squares.sample();
     a_y = squares.sample();
     context.beginPath();
@@ -162,6 +164,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 let rainbow_array = ["red", "orange", "yellow", "green", "blue", "purple"];
+let speed_array = ["white", "white" ,"grey", "grey"];
 let colour;
 let count = 0;
 
@@ -202,18 +205,25 @@ setInterval(function () {
   loop++;
 }, 300 * loop_delay);
 let done = false;
+startTimer();
 timer();
-setInterval(timer, tik);
+// mode = "speed";
+function startTimer() {
+  clearInterval(interval); // Clear any existing interval
+  interval = setInterval(timer, (mode === "speed") ?  80 : 100); // Set new interval
+  return;
+}
 
 function timer() {
   clicked = false;
   dirc = direc;
   drawObstacle();
-  if (mode == "rainbow") {
+  if (mode == "rainbow" || mode == "speed") {
     count++;
     if (count == 100) {
       mode = "normal";
       count = 0;
+      startTimer();
     }
   }
   if (dirc == "left") {
@@ -256,7 +266,7 @@ function timer() {
   // drawPlayer
   if (p_x == a_x && p_y == a_y) {
     score++;
-    console.log("previous score: " + previousScore + " current sore: " + score);
+    // console.log("previous score: " + previousScore + " current sore: " + score);
     if (score == previousScore + 1 || score == previousScore + 2){
       previousScore = score;
     } else {
@@ -264,7 +274,7 @@ function timer() {
       gameover(true);
     }
     
-    point.play();
+    // point.play();
     if (mode == "rainbow") {
       score++;
     }
@@ -289,7 +299,7 @@ function timer() {
       p_y_pos[p_y_pos.length - 2 - i] == p_y
     ) {
       if (mode != "aaaaaa") {
-        console.log("game-over");
+        // console.log("game-over");
         gameover();
       }
     }
@@ -297,7 +307,7 @@ function timer() {
       p_x_pos[p_x_pos.length - 2 - i] == a_x &&
       p_y_pos[p_y_pos.length - 2 - i] == a_y
     ) {
-      console.log("inside you!");
+      // console.log("inside you!");
       drawApple();
     }
 
@@ -320,6 +330,11 @@ function timer() {
       context.fillStyle = "#0000ff";
     } else if (mode == "aaaaaa") {
       context.fillStyle = "#aaaaaa";
+    } else if (mode == "speed") {
+      if (c > 3) {
+        c = 0;
+      }
+      context.fillStyle = speed_array[c];
     }
     context.closePath();
     context.fill();
@@ -358,7 +373,7 @@ function gameover(cheater) {
     
   } else {
   let username = "DIP";
-  gameover_sound.play();
+  // gameover_sound.play();
   if (document.getElementById("name").value == "DIP") {
     username = prompt("Please enter your Username", "DIP");
   }
