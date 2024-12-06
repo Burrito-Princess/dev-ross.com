@@ -19,6 +19,9 @@ let mode_array = [
   "normal",
   "normal",
   "normal",
+  "normal",
+  "normal",
+  "normal",
 ];
 
 let ex_p = [];
@@ -71,7 +74,6 @@ function drawObstacle() {
 
 function drawApple(player) {
   if (mode == "rainbow") {
-    console.log(mode);
     a_x = squares.sample();
     a_y = squares.sample();
     context.beginPath();
@@ -81,7 +83,6 @@ function drawApple(player) {
     context.fill();
   } else {
     mode = mode_array.sample();
-    console.log(mode);
     a_x = squares.sample();
     a_y = squares.sample();
     context.beginPath();
@@ -128,28 +129,28 @@ function reDrawPlayer() {
 document.addEventListener("keydown", function (event) {
   if (clicked == false) {
     clicked = true;
-    if (event.keyCode == 37) {
+    if (event.keyCode == 37 || 74) {
       if (direc != "right") {
         direc = "left";
         if (p_x < 0) {
           p_x = g_size * p_size - p_size;
         }
       }
-    } else if (event.keyCode == 38) {
+    } else if (event.keyCode == 38 || 73) {
       if (direc != "down") {
         direc = "up";
         if (p_y < 0) {
           p_y = g_size * p_size - p_size;
         }
       }
-    } else if (event.keyCode == 39) {
+    } else if (event.keyCode == 39 || 76) {
       if (direc != "left") {
         direc = "right";
         if (p_x > g_size * p_size - p_size) {
           p_x = 0;
         }
       }
-    } else if (event.keyCode == 40) {
+    } else if (event.keyCode == 40 || 75) {
       if (direc != "up") {
         direc = "down";
         if (p_y > g_size * p_size - p_size) {
@@ -186,7 +187,6 @@ highscores = getHighscores();
 highscores
   .then((data) => {
     dataArray = data;
-    console.log(dataArray);
   })
   .catch((error) => {
     console.error(error);
@@ -341,15 +341,18 @@ const setHighscore = async (name, score) => {
 function gameover() {
   let username = "DIP";
   gameover_sound.play();
-  if (document.getElementById("name").value != "DIP") {
-    username = document.getElementById("name").value;
+  if (document.getElementById("name").value == "DIP") {
+    username = prompt("Please enter your Username", "DIP");
   }
+  // if (document.getElementById("name").value != "DIP") {
+  //   username = document.getElementById("name").value;
+  // }
   username = username.toUpperCase();
   context.fillStyle = "red";
   context.fillRect(0, 0, 500, 500);
   setHighscore(username, score);
   document.getElementById("score").innerHTML = "Score: " + score;
-  
+
   tableCreate();
   drawApple(true);
   score = 2;

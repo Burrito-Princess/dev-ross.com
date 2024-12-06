@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Ross - dev-ross.com</title>
   <link rel="stylesheet" href="./src/input.css" />
-
   <link rel="stylesheet" href="./src/output.css" />
   <link rel="apple-touch-icon" sizes="57x57" href="./../assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./../assets/favicon/apple-icon-60x60.png">
