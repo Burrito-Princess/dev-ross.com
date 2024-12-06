@@ -29,6 +29,7 @@ let ex_p = [];
 let direc = "up";
 let loopcount = 0;
 let score = 2;
+let previousScore = 2;
 let p_size = 25;
 let g_size = 28;
 let tik = 100;
@@ -129,28 +130,28 @@ function reDrawPlayer() {
 document.addEventListener("keydown", function (event) {
   if (clicked == false) {
     clicked = true;
-    if (event.keyCode == 37 || 74) {
+    if (event.keyCode == 37 || event.keyCode == 74) {
       if (direc != "right") {
         direc = "left";
         if (p_x < 0) {
           p_x = g_size * p_size - p_size;
         }
       }
-    } else if (event.keyCode == 38 || 73) {
+    } else if (event.keyCode == 38 || event.keyCode == 73) {
       if (direc != "down") {
         direc = "up";
         if (p_y < 0) {
           p_y = g_size * p_size - p_size;
         }
       }
-    } else if (event.keyCode == 39 || 76) {
+    } else if (event.keyCode == 39 || event.keyCode == 76) {
       if (direc != "left") {
         direc = "right";
         if (p_x > g_size * p_size - p_size) {
           p_x = 0;
         }
       }
-    } else if (event.keyCode == 40 || 75) {
+    } else if (event.keyCode == 40 || event.keyCode == 75) {
       if (direc != "up") {
         direc = "down";
         if (p_y > g_size * p_size - p_size) {
@@ -255,6 +256,14 @@ function timer() {
   // drawPlayer
   if (p_x == a_x && p_y == a_y) {
     score++;
+    console.log("previous score: " + previousScore + " current sore: " + score);
+    if (score == previousScore + 1 || score == previousScore + 2){
+      previousScore = score;
+    } else {
+      console.log("cheater");
+      gameover(true);
+    }
+    
     point.play();
     if (mode == "rainbow") {
       score++;
@@ -338,7 +347,16 @@ const setHighscore = async (name, score) => {
     });
 };
 
-function gameover() {
+function gameover(cheater) {
+  if (score == previousScore || score == previousScore + 1 || score == previousScore + 2){
+  } else {
+    cheater = true;
+  }
+  if (cheater){
+    alert("You cheated, please dont anymore <3");
+    window.location.href = "https://en.wikipedia.org/wiki/Moral";
+    
+  } else {
   let username = "DIP";
   gameover_sound.play();
   if (document.getElementById("name").value == "DIP") {
@@ -356,7 +374,7 @@ function gameover() {
   tableCreate();
   drawApple(true);
   score = 2;
-}
+}}
 
 function tableCreate() {
   if (done == true) {
