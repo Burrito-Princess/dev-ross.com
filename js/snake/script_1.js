@@ -56,23 +56,23 @@ let random_y;
 
 let obstacle_array = [1, 1, 1, 2, 2, 3];
 
-shuffleObstacle();
+// shuffleObstacle();
 
-function shuffleObstacle() {
-  random_x = obstacle_array.sample();
-  random_y = obstacle_array.sample();
-  o_x = squares.sample();
-  o_y = squares.sample();
-  return;
-}
+// function shuffleObstacle() {
+//   random_x = obstacle_array.sample();
+//   random_y = obstacle_array.sample();
+//   o_x = squares.sample();
+//   o_y = squares.sample();
+//   return;
+// }
 
-function drawObstacle() {
-  context.beginPath();
-  context.rect(o_x, o_y, p_size * random_x, p_size * random_y);
-  context.fillStyle = "#0000ff";
-  context.closePath();
-  context.fill();
-}
+// function drawObstacle() {
+//   context.beginPath();
+//   context.rect(o_x, o_y, p_size * random_x, p_size * random_y);
+//   context.fillStyle = "#0000ff";
+//   context.closePath();
+//   context.fill();
+// }
 
 function drawApple(player) {
   if (mode == "rainbow" || mode == "speed") {
@@ -215,9 +215,10 @@ function startTimer() {
 }
 
 function timer() {
+  
   clicked = false;
   dirc = direc;
-  drawObstacle();
+  // drawObstacle();
   if (mode == "rainbow" || mode == "speed") {
     count++;
     if (count == 100) {
