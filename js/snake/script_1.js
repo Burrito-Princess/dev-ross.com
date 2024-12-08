@@ -389,6 +389,7 @@ function gameover(cheater) {
   tableCreate();
   drawApple(true);
   score = 2;
+  previousScore = 2;
 }}
 
 function tableCreate() {
