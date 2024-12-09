@@ -389,7 +389,7 @@ function gameover(cheater) {
   tableCreate();
   drawApple(true);
   score = 2;
-  window.location.href = "./php-database/player_highscore.php";
+  previousScore = 2;
 }}
 
 function tableCreate() {

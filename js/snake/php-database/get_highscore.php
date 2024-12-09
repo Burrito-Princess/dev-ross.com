@@ -6,7 +6,8 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("SELECT * FROM scores INNER JOIN players ON scores.player_id = players.id ORDER BY score DESC LIMIT 6");
+    // $stmt = $conn->prepare("SELECT * FROM scores INNER JOIN players ON scores.player_id = players.id ORDER BY score DESC LIMIT 6");
+    $stmt = $conn->prepare("SELECT * FROM personal_high ORDER BY score DESC LIMIT 6");
     $stmt->execute();
 
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
