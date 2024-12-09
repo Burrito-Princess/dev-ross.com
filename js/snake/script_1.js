@@ -376,7 +376,10 @@ function gameover(cheater) {
     
     // gameover_sound.play();
     if (document.getElementById("name").value == "DIP") {
-      console.log("updated");
+      do {
+        username = prompt("please fill out your 3 letter Username");
+      } while (username == null || username == "" || username.length != 3);
+    
     }
     username = username.toUpperCase();
     context.fillStyle = "red";
