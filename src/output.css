@@ -624,10 +624,6 @@ video {
   height: 16rem;
 }
 
-.h-\[15rem\] {
-  height: 15rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -843,15 +839,5 @@ video {
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:flex-row {
-    flex-direction: row;
-  }
-
-  .\32xl\:justify-between {
-    justify-content: space-between;
   }
 }

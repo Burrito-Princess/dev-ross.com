@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Ross - dev-ross.com</title>
   <link rel="stylesheet" href="./src/input.css" />
-
   <link rel="stylesheet" href="./src/output.css" />
   <link rel="apple-touch-icon" sizes="57x57" href="./../assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./../assets/favicon/apple-icon-60x60.png">
@@ -25,26 +24,23 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <!-- <script>
+  <script>
   function copyText(){
-    console.log("yes")
-    navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
-  if (result.state == "granted" || result.state == "prompt") {
-    alert("Write access granted!");
-  }
-});
-  navigator.clipboard.writeText
-                ("my discord");
-                
-  }
+    navigator.clipboard.writeText("Your text to copy")
+    .then(() => {
+         alert("Username copied")
+    })
+    .catch(err => {
+        console.error("Failed to copy text: ", err);
+    });}
           
-</script> -->
+</script>
 </head>
 
 <body class="h-max bg-king_brown">
-  <div class="h-full flex justify-start bg-king_brown">
-    <div class="hidden lg:inline ">
-      <div id="insg_img">
+  <div class="h-full flex lg:flex-row flex-col justify-start bg-king_brown ">
+    <div class="">
+      <div id="insg_img" class="hidden lg:inline">
         <img class="h-screen" src="./assets/img/insignia-king-ross.svg" alt="insignia king ross" />
       </div>
       <div>
@@ -77,7 +73,7 @@
               <div class="flex flex-col justify-center h-full w-full">
                 <div class="h-full w-full flex justify-center">
                   <a class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Mail</a>
-                  <button id="disc_button" onclick='copyText()' class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="mailto:dev-ross@hotmail.com">Discord</button>
+                  <button id="disc_button" onclick='copyText()' class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl">Discord</button>
                 </div>
                 <div class="h-full w-full flex justify-center">
                   <a class="hover:bg-hover_king_pink shadow-xl h-2/3 w-1/2 text-black bg-king_pink m-3 flex justify-center items-center rounded-xl text-xl" href="https://github.com/Burrito-Princess" target="_blank">Github</a>
@@ -193,11 +189,7 @@
           </div>
         </div>
       </div>
-
-
-      <!-- start 3rd row -->
-
-      <!-- end -->
+    </div>
 
     </div>
     <script src="./about.js"></script>

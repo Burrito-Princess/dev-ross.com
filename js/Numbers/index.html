@@ -27,10 +27,33 @@
             /* text-wrap: wrap; */
             word-break: break-word;
             height: 100px;
-            width: 100%;
+            width: 90%;
         }
-        #body{
+
+        body{
             margin: 5%;
+            width: 90vw;
+            
+        }
+
+        *{
+            overflow-x: hidden;
+        }
+
+        @media screen and (min-width: 600px){
+            body{
+                margin: 0;
+                width: 100vw;
+            }
+            #chartPlace {
+                height: auto;
+                width: 600px;
+            }
+            #process{
+                height: 100px;
+                width: 600px;
+            
+            }
         }
     </style>
 </head>
@@ -219,6 +242,7 @@
                     collection[i].style.borderColor = "white";
                 };
                 document.getElementById("invert").innerHTML = "Lightmode!";
+                document.getElementById("input").style.color = "black";
             };
         };
 

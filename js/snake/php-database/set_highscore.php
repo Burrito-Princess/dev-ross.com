@@ -26,6 +26,8 @@ if (!empty($decoded['name']) && !empty($decoded['score'])) {
 
         $stmt = $conn->prepare("INSERT INTO scores (`player_id`, `score`) VALUES ('" . $id . "', '" . $score . "')");
         $stmt->execute();
+
+        include "./player_highscore.php";
         
     } catch (PDOException $e) {
         echo json_encode(['error' => 'cannot add to database']);

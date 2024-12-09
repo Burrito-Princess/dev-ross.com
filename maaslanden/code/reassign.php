@@ -8,7 +8,7 @@
         echo "Connection failed: " . $e->getMessage();
       }
       $stmt = $conn->prepare("SELECT * FROM game_keys WHERE game = " . $_GET['game']);
-      $stmt->execute();
+      $stmt->execute(); 
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
       if ($_GET['key'] == $result[0]['game_key']){
       $game = $_GET['game'];

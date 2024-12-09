@@ -68,4 +68,4 @@ you should add your own (or other) steam ID
         5. Upgrades
 
         L. Front-end (least important)
-        L. maaslanden.dev-ross.com (indev choice) / maaslanden.net (final product)
+[check] L. maaslanden.dev-ross.com (indev choice) / maaslanden.net (final product)
