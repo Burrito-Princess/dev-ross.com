@@ -14,7 +14,11 @@ foreach ($players as $player) {
     $player_id = $player['id'];
     $stmt = $conn->prepare("SELECT * FROM scores WHERE player_id = '$player_id' ORDER BY score DESC LIMIT 1");
     $stmt->execute();
-    $player_highscore[$player["name"]] = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $highscore = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    if (!empty($highscore)){
+        $player_highscore[$player["name"]] = $highscore;
+    }
+    
 }
 $stmt = $conn->prepare("DELETE FROM `personal_high`");
 $stmt->execute();
