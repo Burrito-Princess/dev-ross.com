@@ -163,7 +163,7 @@ document.addEventListener("keydown", function (event) {
   }
 });
 let rainbow_array = ["red", "orange", "yellow", "green", "blue", "purple"];
-let speed_array = ["white", "white" ,"grey", "grey"];
+let speed_array = ["white", "white", "grey", "grey"];
 let colour;
 let count = 0;
 
@@ -209,12 +209,12 @@ timer();
 // mode = "speed";
 function startTimer() {
   clearInterval(interval); // Clear any existing interval
-  interval = setInterval(timer, (mode === "speed") ?  80 : 100); // Set new interval
+  interval = setInterval(timer, (mode === "speed") ? 80 : 100); // Set new interval
   return;
 }
 
 function timer() {
-  
+
   clicked = false;
   dirc = direc;
   // drawObstacle();
@@ -267,13 +267,13 @@ function timer() {
   if (p_x == a_x && p_y == a_y) {
     score++;
     // console.log("previous score: " + previousScore + " current sore: " + score);
-    if (score == previousScore + 1 || score == previousScore + 2){
+    if (score == previousScore + 1 || score == previousScore + 2) {
       previousScore = score;
     } else {
       console.log("cheater");
       gameover(true);
     }
-    
+
     // point.play();
     if (mode == "rainbow") {
       score++;
@@ -363,34 +363,33 @@ const setHighscore = async (name, score) => {
 };
 
 function gameover(cheater) {
-  if (score == previousScore || score == previousScore + 1 || score == previousScore + 2){
+  if (score == previousScore || score == previousScore + 1 || score == previousScore + 2) {
   } else {
     cheater = true;
   }
-  if (cheater){
+  if (cheater) {
     alert("You cheated, please dont anymore <3");
     window.location.href = "https://en.wikipedia.org/wiki/Moral";
-    
-  } else {
-  let username = "DIP";
-  // gameover_sound.play();
-  if (document.getElementById("name").value == "DIP") {
-    username = prompt("Please enter your Username", "DIP");
-  }
-  // if (document.getElementById("name").value != "DIP") {
-  //   username = document.getElementById("name").value;
-  // }
-  username = username.toUpperCase();
-  context.fillStyle = "red";
-  context.fillRect(0, 0, 500, 500);
-  setHighscore(username, score);
-  document.getElementById("score").innerHTML = "Score: " + score;
 
-  tableCreate();
-  drawApple(true);
-  score = 2;
-  previousScore = 2;
-}}
+  } else {
+    let username = "DIP";
+    
+    // gameover_sound.play();
+    if (document.getElementById("name").value == "DIP") {
+      console.log("updated");
+    }
+    username = username.toUpperCase();
+    context.fillStyle = "red";
+    context.fillRect(0, 0, 500, 500);
+    setHighscore(username, score);
+    document.getElementById("score").innerHTML = "Score: " + score;
+
+    tableCreate();
+    drawApple(true);
+    score = 2;
+    previousScore = 2;
+  }
+}
 
 function tableCreate() {
   if (done == true) {
