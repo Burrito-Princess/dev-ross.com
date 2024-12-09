@@ -363,10 +363,7 @@ const setHighscore = async (name, score) => {
 };
 
 function gameover(cheater) {
-  if (score == previousScore || score == previousScore + 1 || score == previousScore + 2){
-  } else {
-    cheater = true;
-  }
+  cheater = !(score == previousScore || score == previousScore + 1 || score == previousScore + 2)
   if (cheater){
     alert("You cheated, please dont anymore <3");
     window.location.href = "https://en.wikipedia.org/wiki/Moral";
