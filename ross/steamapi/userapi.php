@@ -23,3 +23,4 @@ include("steam.php");
 
                     // Decode the JSON response
                     $data = json_decode($response, true);
+                    // echo "<pre>"; print_r($data);

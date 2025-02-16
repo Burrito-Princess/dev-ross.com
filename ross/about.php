@@ -8,23 +8,8 @@
   <link rel="stylesheet" href="./../src/input.css" />
 
   <link rel="stylesheet" href="./../src/output.css" />
-  <link rel="apple-touch-icon" sizes="57x57" href="./../assets/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./../assets/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./../assets/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./../assets/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./../assets/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./../assets/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./../assets/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./../assets/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./../assets/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./../assets/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./../assets/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./../assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <script src="main.js"></script>
+ 
   <!-- <script>
   function copyText(){
     console.log("yes")
@@ -42,6 +27,7 @@
 </head>
 
 <body class="h-max bg-king_brown">
+ 
   <div class="h-full flex justify-start bg-king_brown">
     <div class="hidden lg:inline ">
       <div id="insg_img">
@@ -54,7 +40,7 @@
               Home
             </button>
           </a>
-          <a target="_blank" href="./../js/snake/">
+          <a target="_blank" href="https://radross.net">
             <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
               Snake
             </button>
@@ -69,7 +55,7 @@
               Maaslanden
             </button>
           </a>
-          <a href="./../js/numbers/">
+          <a href="./../js/Numbers/">
             <button class="shadow-xl bg-king_blue h-10 w-32 rounded-xl text-king_white hover:bg-hover_king_blue m-5">
               Numbers.exe
             </button>
@@ -162,10 +148,8 @@
                 include("./steamapi/userapi.php");
                 include("./steamapi/gamesapi.php");
                 include("./steamapi/statsgame.php");
-                // include("./steamapi/statsgame.php");
-
                 // Check if the request was successful
-                if ($data) {
+                if ($data['response']['players']) {
                   // Output the data
                   echo "<img src=" . $data['response']['players']['0']["avatarfull"] . " class='rounded-xl'>";
                   echo "User: " . $data['response']['players']['0']['personaname'] . "<br>";
@@ -205,7 +189,7 @@
       <!-- end -->
 
     </div>
-    <script src="./about.js"></script>
+    
 </body>
 
 </html>

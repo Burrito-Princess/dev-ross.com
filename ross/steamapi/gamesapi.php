@@ -13,7 +13,7 @@ include("steam.php");
 
                     // Execute cURL session and get the response
                     $response = curl_exec($ch);
-
+                    
                     // Check for cURL errors
                     if (curl_errno($ch)) {
                         echo 'cURL error: ' . curl_error($ch);
@@ -24,4 +24,5 @@ include("steam.php");
 
                     // Decode the JSON response
                     $game_data = json_decode($response, true);
-                    // var_dump($game_data['response']['games']['0']['playtime_forever']);
+                    // var_dump($game_data['response']['games']['0']['playtime_forever'])
+                    // echo "<pre>"; print_r($game_data);

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Ross - dev-ross.com</title>
+  <script src="./ross/perlin/main.js"></script>
   <link rel="stylesheet" href="./src/input.css" />
   <link rel="stylesheet" href="./src/output.css" />
   <link rel="apple-touch-icon" sizes="57x57" href="./../assets/favicon/apple-icon-57x57.png">
@@ -26,7 +27,7 @@
   <meta name="theme-color" content="#ffffff">
   <script>
   function copyText(){
-    navigator.clipboard.writeText("Your text to copy")
+    navigator.clipboard.writeText("burrross_1996")
     .then(() => {
          alert("Username copied")
     })
@@ -35,10 +36,101 @@
     });}
           
 </script>
+<style>
+  .cnvs{
+      position: fixed;
+      left:0;
+      top:0;
+      z-index:-1;
+    height: 100%;
+      
+  }
+  .main{
+    position:fixed;
+      z-index:0;
+      left:12px;
+      top:10px;
+
+  }
+</style>
+
 </head>
 
-<body class="h-max bg-king_brown">
-  <div class="h-full flex lg:flex-row flex-col justify-start bg-king_brown ">
+<body class="h-max ">
+<canvas id="cnvs"></canvas>
+<script>
+  "use strict";
+  let cnvs = document.getElementById("cnvs");
+//   cnvs.width = cnvs.height = 512;
+cnvs.width =  window.innerWidth;
+cnvs.height = window.innerHeight;
+  let ctx = cnvs.getContext("2d");
+
+  const GRID_SIZE_X = window.innerWidth/150;
+  const GRID_SIZE_Y = window.innerHeight/150;
+  const RESOLUTION = 16;
+  const COLOR_SCALE = 250;
+  let count = 0;
+  const speed = 400;
+
+  let pixel_size = cnvs.width / RESOLUTION;
+  let num_pixels_x = GRID_SIZE_X / RESOLUTION;
+  let num_pixels_y = GRID_SIZE_Y / RESOLUTION;
+  
+  setInterval(function () {
+    ctx.clearRect(0, 0, cnvs.width, cnvs.height);
+    count += num_pixels_x / GRID_SIZE_X;
+    for (let y = 0; y < GRID_SIZE_Y + 1; y += num_pixels_y / GRID_SIZE_Y) {
+      for (let x = 0; x < GRID_SIZE_X + 1; x += num_pixels_x / GRID_SIZE_X) {
+        let v = parseInt(perlin.get(x + count, y) * COLOR_SCALE);
+        // console.log("X : " + x + "|| Y: " + y + "||" + v)
+        // console.log(v);
+        switch (v) {
+          default:
+            ctx.fillStyle = "#000000";
+            break;
+        case -1250:
+        ctx.fillStyle = "#0006b1";
+        break;
+          case -1000: //deeo ocean;
+            ctx.fillStyle = "#0006b1";
+          case -750: //shallow water
+            ctx.fillStyle = "#0006b1";
+            break;
+          case -500: //shallow waters
+            ctx.fillStyle = "#0021f3";
+            break;
+          case -250: //shallow water
+            ctx.fillStyle = "#0021f3";
+            break;
+          case 0: //shallow water
+            ctx.fillStyle = "#f8f0a4";
+            break;
+          case 250: //medow
+            ctx.fillStyle = "#138510";
+            break;
+          case 500: //dry medow 
+            ctx.fillStyle = "#708C50";
+            break;
+          case 750: //mountain
+            ctx.fillStyle = "#808080";
+            break;
+            case 1000: // snow 
+                ctx.fillStyle = "#f2f2f2";
+        }
+        // ctx.fillStyle = "hsl(" + v + ",50%,50%)";
+        ctx.fillRect(
+          (x / GRID_SIZE_X) * cnvs.width,
+          (y / GRID_SIZE_Y) * cnvs.height,
+          pixel_size,
+          pixel_size
+        );
+      }
+    }
+    // debugger;
+  }, speed);
+</script>  
+<div class="h-full flex lg:flex-row flex-col justify-start main">
     <div class="">
       <div id="insg_img" class="hidden lg:inline">
         <img class="h-screen" src="./assets/img/insignia-king-ross.svg" alt="insignia king ross" />
@@ -193,6 +285,8 @@
 
     </div>
     <script src="./about.js"></script>
+    <script src="./about.js"></script>
+   
 </body>
 
 </html>
