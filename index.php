@@ -38,26 +38,26 @@
 </script>
 <style>
   .cnvs{
-      position: fixed;
       left:0;
       top:0;
       z-index:-1;
-    height: 100%;
+    /* height: 100%; */
       
   }
   .main{
-    position:fixed;
+    position:absolute;
       z-index:0;
       left:12px;
       top:10px;
 
   }
+
 </style>
 
 </head>
 
-<body class="h-max ">
-<canvas id="cnvs"></canvas>
+<body class="body">
+<canvas id="cnvs" style="position: fixed;"></canvas>
 <script>
   "use strict";
   let cnvs = document.getElementById("cnvs");
