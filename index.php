@@ -41,7 +41,7 @@
       left:0;
       top:0;
       z-index:-1;
-    /* height: 100%; */
+    height: 100%;
       
   }
   .main{
@@ -65,15 +65,20 @@
 cnvs.width =  window.innerWidth;
 cnvs.height = window.innerHeight;
   let ctx = cnvs.getContext("2d");
+  ctx.imageSmoothingEnabled = false;
+// let newWindow;
+//   if ((window.innerHeight/150) % 16 == 0){
+// newWindow = window.innerHeight - (window.innerHeight/150) % 16 + 16;
+//   }
+    const RESOLUTION = 16;
+  const GRID_SIZE_X = Math.ceil(window.innerWidth/(RESOLUTION * 16));
+  const GRID_SIZE_Y = Math.ceil(window.innerHeight/(RESOLUTION * 16))
 
-  const GRID_SIZE_X = window.innerWidth/150;
-  const GRID_SIZE_Y = window.innerHeight/150;
-  const RESOLUTION = 16;
   const COLOR_SCALE = 250;
   let count = 0;
   const speed = 400;
 
-  let pixel_size = cnvs.width / RESOLUTION;
+  let pixel_size = 16;
   let num_pixels_x = GRID_SIZE_X / RESOLUTION;
   let num_pixels_y = GRID_SIZE_Y / RESOLUTION;
   
@@ -119,9 +124,10 @@ cnvs.height = window.innerHeight;
                 ctx.fillStyle = "#f2f2f2";
         }
         // ctx.fillStyle = "hsl(" + v + ",50%,50%)";
+
         ctx.fillRect(
-          (x / GRID_SIZE_X) * cnvs.width,
-          (y / GRID_SIZE_Y) * cnvs.height,
+          -0.5 + (x  / GRID_SIZE_X) * cnvs.width,
+          -0.5 + (y / GRID_SIZE_Y) * cnvs.height,
           pixel_size,
           pixel_size
         );
